@@ -120,5 +120,6 @@ public class Networking {
         ++turn;
 
         map.updateMap(inputStringMetadata);
+        map.setTurn(turn);
     }
 }

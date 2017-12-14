@@ -13,6 +13,7 @@ public class GameMap {
 
     // used only during parsing to reduce memory allocations
     private final List<Ship> currentShips = new ArrayList<>();
+    private int turn;
 
     public GameMap(final int width, final int height, final int playerId) {
         this.width = width;
@@ -140,5 +141,13 @@ public class GameMap {
         }
 
         return this;
+    }
+
+    public void setTurn(int turn) {
+        this.turn = turn;
+    }
+
+    public int getTurn() {
+        return turn;
     }
 }
